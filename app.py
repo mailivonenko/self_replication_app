@@ -31,6 +31,7 @@ github = oauth.remote_app(
 FILES = [
 'app.py',
 'README.md',
+'instructions.md',
 'templates/index.html',
 'templates/status.html',
 'requirements.txt',
