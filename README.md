@@ -5,8 +5,11 @@ Self-replicating app creates a `self_replication_app` repository in user's GitHu
 
 
 Flask is used for web app logic implementation
+
 Github OAuth APP is used for Github API authorization
+
 PyGithub lib is used as a github api wrapper
+
 Heroku is used to host the web app
 
 App flow:
