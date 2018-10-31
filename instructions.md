@@ -53,17 +53,19 @@ The application is now deployed. Ensure that at least one instance of the app is
 heroku ps:scale web=1
 ~~~
 
-#Create OAuth App on the Github
+# Create OAuth App on the Github
 To launch the application by your own you need to go to the Github developers settings and create a New OAuth App:
 https://github.com/settings/developers
 
 Put some meaningful name.
+
 For Homepage URL put the application url generate by heroku: your_heroku_app_url
+
 For Authorization callback URL put: your_heroku_app_url/login/authorized
 
 Once Github OAuth App is created you will see __Cliend ID__ and __Client Secret__ that we will to app to execute.
 
-#Add Heroku environmnetal variables for application
+# Add Heroku environmnetal variables for application
 To launch the application you need to set next environmnetal variables: `SESSION_SECRET_KEY`, `GITHUB_CLIENT_SECRET`, `GITHUB_CLIENT_ID`
 
 Where the `SESSION_SECRET_KEY` is a secret key for a session. You can use some random generator to put this.
